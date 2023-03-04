@@ -12,7 +12,7 @@ dashboardPage(
             tabItem('provas', fluidPage(
                 fluidRow(
                     column(6, box(selectInput('periodo', 'período', choices = c('1', '2'), '1'), width = 12)),
-                    column(6, box(uiOutput('materias'), width = 12))),
+                    column(6, box(selectInput('materia', 'matéria', c('est.básica', 'matriz', 'função'), 'est.básica'), width = 12))),
 
                 fluidRow(
                     column(6, box(plotOutput('p1'), width = 12)),
